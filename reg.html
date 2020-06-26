@@ -15,14 +15,24 @@
 
 
     </style>
+    <script>
+        function display()
+        {
+            var fname= document.getElementById("fname").value;
+            var lname= document.getElementById("lname").value;
+            document.writeln("<h1>Confirmation Page</h1><br>");
+            document.writeln("Thank you,"+lname+" "+fname+" for Registering.<br><br>");
+            
+        }
+        </script>
 
 </head>
 <body>
     <h3>Register For Course of your Choice</h3>
     <div class="form">
     <form>
-        <label>First Name: </label><input type="text" hint="Vadrevu"><br><br
-        <label>Last Name:  </label><input type="text" hint="Vaishnav"><br><br>
+        <label>First Name: </label><input type="text" name="fname" id="fname"><br><br>
+        <label>Last Name:  </label><input type="text" name="lname" id="lname"><br><br>
         <label for="branch">Branch  </label><select name="branch">
             <option value="CSE" selected>CSE</option>
             <option >ECE</option>
@@ -48,6 +58,7 @@
   <label>Interests in Course</label><br>
   <textarea name="message" rows="5" cols="20" hint="text here">
     </textarea>
+    <input type="submit" onClick="display()">
         
     </form>
 </div>
