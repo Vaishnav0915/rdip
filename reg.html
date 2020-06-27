@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
     <style>
         .form{
             display: block;
@@ -11,6 +11,53 @@
             border-radius: 2px;
             /*border-style: none;*/
             padding: 55px;}
+            h3{
+                color:olive;
+                font-style : italic;
+                font-variant:small-caps;
+                text-shadow: 2px 2px 3px grey;
+            }
+            .submit{
+                background-color:darkcyan;
+                color: white;
+                border:1px solid black;
+                padding: 25px;
+                text-align: center;
+                font-variant: small-caps;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .submit:hover{
+                background-color: darkseagreen;
+            }
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position:sticky; /* Safari */
+            position: sticky;
+            top: 0;
+        }
+        li {
+             float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
             
 
 
@@ -24,10 +71,15 @@
             document.writeln("Thank you,"+lname+" "+fname+" for Registering.<br><br>");
             
         }
-        </script>
+    </script>
 
 </head>
 <body>
+    <ul>
+        <li><a  href="main.html">Home</a></li>
+        <li><a href="index1.html">Courses</a></li>
+        <li><a class="active" href="reg.html">Course Registration</a></li>
+</ul>
     <h3>Register For Course of your Choice</h3>
     <div class="form">
     <form>
@@ -58,7 +110,7 @@
   <label>Interests in Course</label><br>
   <textarea name="message" rows="5" cols="20" hint="text here">
     </textarea>
-    <input type="submit" onClick="display()">
+    <input type="submit" onClick="display()" class="submit">
         
     </form>
 </div>

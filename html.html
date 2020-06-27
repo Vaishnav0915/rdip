@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<p>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <style>
        /* table, tr, td {
             border: 1px solid black;
@@ -43,19 +43,26 @@
         }*/
         .frame1{
             border: none;
+            margin-top:0px
         }
+        .img{
+            position:absolute;
+            top:0px;
+            right:0px;
+        }
+        
         .frame2{
-            border: none;
-            float:right;
+            /*float: right;*/
+            margin:0px 0px 0px 910px;
         }
 
     </style>
     
 </head>
 <body>
-    
-        <iframe src="C:\Users\Vaishnav\Documents\GitHub\rdip\imgframe.html" class="frame2" width="25%" height="400"></iframe>
-    <iframe src="C:\Users\Vaishnav\Documents\GitHub\rdip\frame1.html" width="75%" height="400" class="frame1"></iframe>  
+    <div class="img">
+        <img src="bckgimg.jpg" class="frame2" width="25%"></div>
+    <iframe src="frame1.html" width="75%" height="600" class="frame1"></iframe>  
     
 </body>
 </html>

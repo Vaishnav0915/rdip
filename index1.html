@@ -9,9 +9,92 @@
           location.replace("file:///C:/Users/Vaishnav/Documents/GitHub/rdip/reg.html")
         }
     </script>
+    <style>
+        body{
+            background-color:rgb(119, 230, 156);
+            border: 5px solid black;
+            padding:40px;
+        }
+        h3{
+            color:firebrick;
+            font-size:1em;
+            font-style:italic;
+            font-variant:small-caps;
+            text-shadow: 2px 2px 3px grey;
+        }
+        a:link, a:visited {
+            background-color:darkcyan;
+            color: white;
+            border:1px solid black;
+            padding: 10px 15px;
+            text-align: center;
+            font-variant: small-caps;
+            text-decoration: none;
+            display: inline-block;
+            
+        }
+
+        a:hover, a:active {
+  background-color: darkseagreen;
+        }
+        ol{
+            background-color:burlywood;
+            padding:10px;
+        }
+        ul{
+            
+            padding:10px;
+        }
+        ol li {
+            
+            padding: 5px;
+            margin-left: 25px;
+           
+        }
+
+        ul li {
+            background-color:lemonchiffon;
+            margin: 5px;
+        }
+        #navbar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position:sticky;
+            position: sticky;
+            top: 0;
+        }
+        #list{
+            float: left;
+        }
+        #list a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        #list a:hover{
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+
 </head>
 <body>
-    <ol type="I">
+    <ul id="navbar">
+        <li id="list" ><a href="main.html">Home</a></li>
+        <li id="list"><a class="active" href="index1.html">Courses</a></li>
+        <li id="list"><a href="reg.html">Course Registrations</a></li>
+    </ul>
+
+    <h3>Courses in the Stream</h3>
+    <ol>
         <li>Data Structure
             <ul>
                 <li>Sorting</li>
@@ -35,6 +118,6 @@
         </li>
         
     </ol>
-    <input type="button" onClick="myFunction()" value="Register Courses" target="_blank">
+    <a href="reg.html" target="blank" class=a1>Register here</a>
 </body>
 </html>

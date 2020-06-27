@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame</title>
+    <style>
+        table, tr, td {
+            /*border: 1px solid black;*/
+            border-collapse: collapse;
+        }
+        tr:nth-child(even) {
+            background-color: darkgrey;
+        }
+        .intro1{
+            border:2px solid black;
+            background-color: #cfe5cf;
+            opacity:0.8;
+            left:0%;
+            text-align: center;
+            
+            
+        }
+        .qual
+        {
+            border:2px solid black;
+            background-color: #cfe5cf;
+            opacity:0.8;
+            margin-top: 10px;
+            text-align: center;
+            padding: 50px;
+        }
+        .about{
+            border:2px solid black;
+            background-color: #cfe5cf;
+            opacity:0.8;
+            margin-top: 10px;
+            text-align: center;
+
+        }
+        body{
+            background-image: url("bckgimg.jpg");
+        }
+        h1{
+            color:blueviolet;
+            font-size: 3em;
+            font-family: Georgia, Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            font-variant: small-caps;
+            text-shadow: 2px 2px 3px grey;
+            padding:10px
+        }
+        h2{
+            font-style:italic;
+            font-variant:small-caps;
+            text-shadow: 2px 2px 3px grey;
+            padding:10px
+            
+        }
+        table{
+            margin:auto;
+            outline:2px dashed darkred;
+            outline-offset: 5px;
+
+
+        }
+        #hide{
+            visibility: hidden;
+        }
+        tr,td{
+            padding-top: 10px;
+            padding-bottom: 10px
+        }
+        #course{
+            text-align: left;
+        }
+        #score{
+            text-align:right;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position:sticky; /* Safari */
+            position: sticky;
+            top: 0;
+        }
+        li {
+             float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="intro1">
+    <ul>
+            <li><a class="active" href="main.html">Home</a></li>
+            <li><a href="index1.html">Courses</a></li>
+            <li><a href="reg.html">Course Registration</a></li>
+    </ul>
+    <h1>Name: Vaishnav Vadrevu</h1>
+    <h2>College/Univ: Vignan's Foundation for Science, Technology and Research</h2>
+    <h3>Stream: Bachelors of Technology in <a href="C:\Users\Vaishnav\Documents\GitHub\rdip\index1.html">Computer Science Engineering</a></h3>
+    </div>
+    <div class="qual">
+        <p id="hide">Couldnt remember my marks  so though of adding my educational qualifications😅😅</p>
+        
+        <table >
+            <tr>
+                <td id="course"><b>subject</b></td>
+                <td><b>max</b></td>
+                <td id="score"><b>Score</b></td>
+            </tr>
+            <tr>
+                <td id="course">math</td>
+                <td>100h</td>
+                <td id="score">56</td>
+            </tr>
+            <tr>
+                <td id="course">science</td>
+                <td>100</td>
+                <td id="score">95</td>
+            </tr>
+            <tr>
+                <td id="course">english</td>
+                <td>90</td>
+                <td id="score">80</td>
+            </tr>
+        </table>
+    
+    
+
+    </div>
+    <div class="about">
+        <p>
+            HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web. Each page contains a series of connections to other pages called hyperlinks.
+            It allows the user to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications.
+            HTML is easy to understand and use. ...
+            HTML is supported by all the browsers. ...
+            The HTML syntax is very similar to XML syntax. ...
+            HTML is Free. ...
+            HTML is supported by most web development tools. ...
+            HTML is the most search friendly programming language. ...
+        </p>
+    </div>
+</body>
+</html>
