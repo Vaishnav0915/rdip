@@ -5,6 +5,9 @@
     width:200;
     height:55;
 }
+#rdip{
+text-align: right;
+}
 ul{
     list-style-type:none;
     padding:0;
