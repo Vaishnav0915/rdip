@@ -1,0 +1,61 @@
+#icon{
+    /*position: absolute;*/
+    margin-left:0px;
+    margin-top:0px;
+    width:200;
+    height:55;
+}
+ul{
+    list-style-type:none;
+    padding:0;
+    overflow:hidden;
+    background-color: black;
+    margin-left: 0px;
+    margin-right:0px;
+    position: relative;
+}
+li{
+    float:left;
+}
+li a{
+    display:block;
+    color: white;
+    text-align:center;
+    padding: 14px 20px;
+    text-decoration:none;
+}
+#details{
+    padding:50px;
+}
+#img2{
+    position:absolute;
+    right:0px;
+    height:200px;
+    width:200px;
+}
+#table1,#tr1,#td1{
+    border:2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+
+}
+#table2{
+    left:10px
+}
+#tr2,#td2{
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, Times, serif;
+    font-weight:bold;
+
+}
+#data{
+    padding:50px;
+}
+
+tr,td{
+    padding:5px;
+}
