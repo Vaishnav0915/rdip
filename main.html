@@ -69,8 +69,7 @@
             visibility: hidden;
         }
         tr,td{
-            padding-top: 10px;
-            padding-bottom: 10px
+            padding:15px;
         }
         #course{
             text-align: left;
@@ -107,6 +106,7 @@
             background-color: #4CAF50;
         }
     </style>
+
 </head>
 <body>
 
@@ -123,26 +123,75 @@
     <div class="qual">
         <p id="hide">Couldnt remember my marks  so though of adding my educational qualifications😅😅</p>
         
-        <table >
+        <table style="padding:15px;">
             <tr>
-                <td id="course"><b>subject</b></td>
-                <td><b>max</b></td>
-                <td id="score"><b>Score</b></td>
+                <td id=><b>subject</b></td>
+                <td><b>mark1</b></td>
+                <td><b>mark2</b></td>
+                <td><b>mark3</b></td>
+                <td><b>mark4</b></td>
+                <td><b>mark5</b></td>
+                <td><b>Average</b></td>
             </tr>
             <tr>
                 <td id="course">math</td>
-                <td>100h</td>
-                <td id="score">56</td>
+                <td id="m1" >100</td>
+                <td id="m2" value="56">56</td>
+                <td id="m3" value= "45">45</td>
+                <td id="m4" value="76">76</td>
+                <td id="m5" value="87">87</td>
+                <td id="avg"></td>
+                <script>
+                    var a=document.getElementById("m1")
+                    var b=document.getElementById("m2")
+                    var c=document.getElementById("m3")
+                    var d=document.getElementById("m4")
+                    var e=document.getElementById("m5")
+                    var x=parseInt(a.innerText);
+                    var y=parseInt(b.innerText);
+                    var z=parseInt(c.innerText);
+                    var p=parseInt(d.innerText);
+                    var q=parseInt(e.innerText);
+                   function mathavg(p1,p2,p3,p4,p5)
+                   {
+                    return (p1+p2+p3+p4+p5)/5
+                   }
+                    document.getElementById("avg").innerHTML=mathavg(x,y,z,p,q);
+                </script>
             </tr>
             <tr>
                 <td id="course">science</td>
-                <td>100</td>
-                <td id="score">95</td>
+                <td id="s1">100</td>
+                <td id="s2">95</td>
+                <td id="s3">56</td>
+                <td id="s4">67</td>
+                <td id="s5">69</td>
+                <td id="avg1"></td>
+                <script>
+                    var t = parseInt(document.getElementById("s1").innerText)+parseInt(document.getElementById("s2").innerText)+parseInt(document.getElementById("s3").innerText)+parseInt(document.getElementById("s4").innerText)+parseInt(document.getElementById("s5").innerText);
+                    function savg(k)
+                    {
+                        return k/5;
+                    }
+                    document.getElementById("avg1").innerHTML=savg(t);
+                </script>
             </tr>
             <tr>
                 <td id="course">english</td>
-                <td>90</td>
-                <td id="score">80</td>
+                <td id="e1">90</td>
+                <td id="e2">80</td>
+                <td id="e3">45</td>
+                <td id="e4">78</td>
+                <td id="e5">87</td>
+                <td id="avg2"></td>
+                <script>
+                    var v = parseInt(document.getElementById("e1").innerText)+parseInt(document.getElementById("e2").innerText)+parseInt(document.getElementById("e3").innerText)+parseInt(document.getElementById("e4").innerText)+parseInt(document.getElementById("e5").innerText);
+                    function eavg(p1)
+                    {
+                        return p1/5;
+                    }
+                    document.getElementById("avg2").innerHTML=eavg(v);
+                </script>
             </tr>
         </table>
     

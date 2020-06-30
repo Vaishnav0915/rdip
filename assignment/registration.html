@@ -5,14 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function validate()
+        {
+            var cname=/^[a-zA-Z]+$/;
+            var cphno=/[0-9]+$/;
+
+            var valid=false;
+            var name=document.getElementById("fname").value;
+            var pno=document.getElementById("phno").value
+            
+            if(!cname.test(name))
+            {
+                alert("invalid name");
+                return false;
+            }
+            else{
+                document.write(name)
+            }
+            document.write("<br>")
+            document.write(pno)
+            if(document.getElementById("c1").checked)
+            {
+                valide=true;
+            }
+            if(document.getElementById("c2").checked)
+            {
+                valid=true;
+            }
+            if(document.getElementById("c3").checked)
+            {
+                valid=true;
+            }
+            if(valid)
+            {
+                return true
+                
+            }
+            else
+            {
+                alert("please select atleat one course to register!!")
+                return false;
+
+            }
+            if(cphno.test(pno))
+            {
+                document.write(pno);
+                return true;
+                
+            }
+            else
+            {
+                alert("Enter valid mobile number");
+                return false;
+            }
+
+
+
+        }
+    </script>
 </head>
+
 <body>
     <a href="https://www.iiit.ac.in/"><img id="icon" src="iiit-new.png" width="200" height="85"> </a>
     <ul>
         <li><a href="homepage.html">Home</a></li>
         <li><a href="registration.html">Registration Form</a></li>
     </ul>
-    <form action="details.html" method="GET">
+    <form action="#"  method="GET" id="myform" name="myform" onsubmit=" return validate()" >
         <table id="table2">
             <tr id="tr2">
                 <td id="td2">First name:</td>
@@ -37,11 +97,11 @@
             </tr>
             <tr id="tr2">
                 <td id="td2">Reason for RDIP:</td>
-                <td id="td2"><input type="checkbox" name="stream" value="HTML">
+                <td id="td2"><input type="checkbox" name="stream" id="c1" value="HTML">
                     <label for="HTML">HTML</label>
-                    <input type="checkbox" name="stream" value="CSS">
+                    <input type="checkbox" name="stream" id="c2" value="CSS">
                     <label for="CSS">CSS</label>
-                    <input type="checkbox" name="stream" value="JS">
+                    <input type="checkbox" name="stream" id="c3" value="JS">
                     <label for="JS">JavaScript</label></td>
             </tr>
             <tr id="tr2">
