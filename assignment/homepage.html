@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function incsize(x)
+        {
+            x.style.height="300px";
+            x.style.width="300px";
+
+        }
+        function nrmlsize(x)
+        {
+            x.style.height="200px";
+            x.style.width="200px"
+        }
+        function color(x){
+            x.style.background="#99d8d0";
+            
+        }
+        function nrmlcolor(x)
+        {
+            x.style.background="white";
+        }
+    </script>
 </head>
 <body>
     <div id="rdip">
@@ -21,9 +42,9 @@
     
     <div id="details">
     <h2>My Details</h2>
-    <img src="passport size.jpg" alt="myImage" id="img2">
+    <img src="passport size.jpg" alt="myImage" id="img2" onmouseover="incsize(this)" onmouseout="nrmlsize(this)">
     
-    <table id="table1">
+    <table id="table1" onmouseover="color(this)" onmouseout="nrmlcolor(this)">
         <tr id="tr1">
             <td id="td1">Name</td>
             <td id="td1">Vaishnav Vadrevu</td>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            border: 5px dashed black;
+            background-color:burlywood ;
+            text-align: center;
+        }
+        h3{
+            font-variant: small-caps;
+            text-shadow: grey;
+        }
+        p{
+            font-family:Impact, sans-serif;
+        }
+        #error,#error2{
+            font-family: Georgia, serif;
+        }
+    </style>
+    <script>
+        function fib()
+        {
+            var a=0;
+            var b=1;
+            var c,i;
+            var output;
+            var mssg=document.getElementById("error")
+            try{
+            var n=Number(document.getElementById("n").value);
+            if(n == "") throw "error"
+            output=a+" "+b+" ";
+            for(i=1;i<=n;i++)
+            {
+                c=a+b;
+                output=output+c+" ";
+                a=b;
+                b=c;
+            }
+            document.getElementById("ar").value=output;
+        }
+        catch(err){
+            mssg.innerText=err;
+        }
+        }
+        function range()
+        {
+            var a;
+            var b=document.getElementById("x").value;
+            var mssg1=document.getElementById("error2")
+            try{
+                if(b=="") throw "error"
+            switch((b<10)?0:(b>=10 && b<=100)?1:(b>100)?2:3)
+            {
+                case 0: a="not in range";
+                break;
+                case 1: a="in range";
+                break;
+                case 2: a="not in range";
+                break;
+            }
+            document.getElementById("ar").innerText=a;
+        }
+        catch(error)
+        {
+            mssg1.innerText=error
+        }
+           
+        }
+        function string()
+        {
+            var q=document.getElementById("main").innerHTML;
+            var h=q.split("");
+            console.log(q);
+            var s=h[5];
+            document.getElementById("ss").innerText="5th word is : "+s;
+            document.getElementById("ss1").innerText="7th word is : " +h[7]
+            document.getElementById("ss2").innerText="10th word is : "+ h[10]
+        }
+    </script>
+</head>
+<body>
+    <div class="mydiv">
+        <h3>HYPER TEXT MARKUP LANGUAGE</h3>
+        <p id="main">HTML is the standard markup language for creating web pages.
+        HTML stands for hyper text markup language.A markup language is set of markup tags.
+        HTML documents are described by HTML tags.Each HTML tag describes different document content and these tags are not case sensitive.
+        </p><button type="button" onclick="string()">check</button>
+        <p id="ss"></p><br>
+        <p id="ss1"></p><br>
+        <p id="ss2"></p>
+    </div>
+    HTML document contains two parts<ol type="I">
+            <li>Head Section(includes title of web page)</li>
+            <li>Body Section(body of program)</li>
+    </ol>
+    <h4>Some Of The Basic Tags Are</h4>
+    <ol type="1">
+            <li>b tag:defines bold text</li>
+    </ol>
+    Enter value:<input type="text" id="n"><p id="error"></p><br>
+    <button type="button"  onclick="fib()">fibonacci</button><br>
+    Enter value:<input type="text" id="x"><p id="error2"></p><br>
+    <button type="button"  onclick="range()">Range</button><br>
+    output:
+    <br>
+    <textarea name="s" id="ar" rows="5" cols="40"></textarea>
+</body>
+</html>
