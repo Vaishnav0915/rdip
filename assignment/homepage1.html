@@ -31,12 +31,12 @@
   $(document).ready(function() {
     //To hide the menu
      $("#hidep").click(function () {
-     $("#contactus").hide(5000)
+     $("#contactus").toggle(5000)
    });
-    //To show the menu
+   /* //To show the menu
      $("#showp").click(function () {
      $("#contactus").show(5000)
-   });    
+   });    */
 });
 </script>
 </head>
@@ -132,8 +132,8 @@
               </div>
             </section>
             <!-- Footer-->
-            <button id="hidep">Hide Contact</button>
-            <button id="showp">show contact</button>
+            <button id="hidep">Toggle contacts</button>
+
   <div class="py-5 bg-light" id="contactus">
       <div class="container">
         <div class="row">

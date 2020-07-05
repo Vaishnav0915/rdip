@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function incsize(x)
         {
@@ -25,6 +26,11 @@
         {
             x.style.background="white";
         }
+        $(document).ready(function(){
+            $(".toggle").click(function(){
+                $(".main").slideToggle('slow')
+            });
+        });
     </script>
 </head>
 <body>
@@ -32,12 +38,15 @@
         <h2><a href="https://serc.iiit.ac.in/rdip">RDIP</a></h2>
     </div>
     <a href="https://www.iiit.ac.in/"><img id="icon" src="iiit-new.png" width="200" height="85"> </a>
-
+    <div id="toggle">
+    <a href="#" class="toggle"><h3>menu</h3></a></div>
+<div class="main">
     <ul>
         <li><a href="homepage.html">Home</a></li>
         <li><a href="registration.html">Registration Form</a></li>
         <li><a href="jsp.html">Java Script</a></li>
     </ul>
+</div>
 
     
     <div id="details">
